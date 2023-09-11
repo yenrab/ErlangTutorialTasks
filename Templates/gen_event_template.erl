@@ -22,12 +22,7 @@
 -module(gen_event_template).
 -behaviour(gen_event).
 
-%% Only include the eunit testing library
-%% in the compiled code if testing is 
-%% being done.
--ifdef(TEST).
--include_lib("eunit/include/eunit.hrl").
--endif.
+
 
 
 %% Supervisor Callbacks
@@ -96,6 +91,7 @@ handle_event(Message,State) ->
 %% This code is included in the compiled code only if 
 %% 'rebar3 eunit' is being executed.
 -ifdef(EUNIT).
+-include_lib("eunit/include/eunit.hrl").
 %%
 %% Unit tests go here. 
 %%

@@ -4,7 +4,8 @@
 		 factorial_of/2,add/3,subtract/3]).
 
 %%
-%% Put your functions, described in the task HTML file here.
+%% Put your functions here. The factorializer, adder, subtracter, multiplier, and divider functions 
+%% are to be created such that they can be spawned.
 %%
 
 
